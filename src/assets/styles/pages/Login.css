@@ -1,0 +1,23 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+
+.Login-p{
+    margin-top: 20px;
+    color: #797B7C;
+    font-size: 1.4rem;
+}
+.Login-p a {
+    letter-spacing: -.1rem;
+    text-decoration: none;
+    color: #666769;
+    font-weight: bold;
+}
+.Login-p a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,77 @@
+.Container{
+    width: 90%;
+    max-width: 391px;
+    border: 2px solid #76CAE6;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.FormRegister{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+.FormRegister h2{
+    color: #494B4A;
+    letter-spacing: -.1rem;
+    font-size: 1.4rem;
+    margin: 16px 0 20px 0;
+}
+
+.FormRegister .btn{
+    width: 150px;
+    height: 30px;
+    margin: 30px 0;
+    border: 0;
+    background-color: #05A5DF;
+    color: #afe0f5;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.FormRegister-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.FormRegister-container span{
+    display: block;
+    margin: 10px 0;
+    font-size: 1.19rem;
+    color: #A7A7A7;
+}
+.FormRegister-container input, 
+.FormRegister-container select{
+    width: 120px;
+    height: 30px;
+    border: 0;
+    padding-left: 10px;
+    border-bottom: 2px solid #76CAE6;
+    outline: none;
+}
+.FormRegister-container input:focus, 
+.FormRegister-container select:focus{
+    background-color: #E8F0FD;
+    border-bottom: 2px solid #60DC54;
+}
+
+.error{
+    color: red;
+    margin: 10px 0;
+}
+
+@media (min-width: 466px){
+    .FormRegister-container input, 
+    .FormRegister-container select{
+        width: 150px;
+    }
+    .Container{
+        width: 85%;
+    }
+}

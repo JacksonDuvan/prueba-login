@@ -1,0 +1,25 @@
+.Header{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F7F7F7;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+.Header img {
+    width: 280px;
+}
+
+.Header ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 2rem;
+    list-style: none;
+}
+.Header ul li a{
+    text-decoration: none;
+    color: #007DB1;
+}
+.Header ul li a:hover{
+    text-decoration: underline;
+}
