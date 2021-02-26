@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const initialState = {
     users: [],
-    findUser: []
+    findUser: [],
 }
 
 export const useInitialState = () => {
@@ -14,16 +14,24 @@ export const useInitialState = () => {
             users: [...state.users, payload]
         })
     }
-    const user = payload => {
+    const logIn = payload => {
         setState({
             ...state,
             findUser: [...state.findUser, payload]
         })
     }
 
+    const signOut = () => {
+        setState({
+            ...state,
+            findUser: []
+        })
+    }
+
     return {
         addUser,
-        user,
+        logIn,
+        signOut,
         state
     }
 }

@@ -38,6 +38,7 @@ export const FormRegister = () => {
                     <label htmlFor="name">
                         <span>Nombre</span>
                         <input 
+                            required
                             type="text" 
                             id="name"
                             name="name"
@@ -46,6 +47,7 @@ export const FormRegister = () => {
                     <label htmlFor="surname">
                         <span>Apellido</span>
                         <input 
+                            required
                             type="text" 
                             id="surname"
                             name="surname"  
@@ -56,6 +58,7 @@ export const FormRegister = () => {
                     <label htmlFor="phone">
                         <span>Teléfono</span>
                         <input 
+                            required
                             type="tel" 
                             id="phone" 
                             name="phone" 
@@ -64,6 +67,7 @@ export const FormRegister = () => {
                     <label htmlFor="email">
                         <span>Correo</span>
                         <input 
+                            required
                             type="email" 
                             id="email"
                             name="email"
@@ -73,12 +77,7 @@ export const FormRegister = () => {
                 <div className="FormRegister-container">
                     <label htmlFor="IDType">
                         <span>Tipo de identificacion</span>
-                        {/* <input 
-                            type="text" 
-                            id="IDType" 
-                            name="IDType" 
-                        /> */}
-                        <select name="IDType" id="IDType" style={{color: '#A7A7A7'}}>
+                        <select required name="IDType" id="IDType" style={{color: '#A7A7A7'}}>
                             <option value="Seleccion" selected>--Seleccione--</option>
                             <option value="Cédula">Cédula</option>
                             <option value="Cédula de extranjeria">Cédula de extranjeria</option>
@@ -88,6 +87,7 @@ export const FormRegister = () => {
                     <label htmlFor="IDNumber">
                         <span>Nro de identificacion</span>
                         <input 
+                            required
                             type="number" 
                             id="IDNumber"
                             name="IDNumber"
@@ -99,6 +99,7 @@ export const FormRegister = () => {
                     <label htmlFor="password">
                         <span>Contraseña</span>
                         <input 
+                            required
                             type="password" 
                             id="password" 
                             name="password" 
@@ -107,6 +108,7 @@ export const FormRegister = () => {
                     <label htmlFor="confirmPassword">
                         <span>Confirmar contraseña</span>
                         <input 
+                            required
                             type="password" 
                             id="confirmPassword"
                             name="confirmPassword"

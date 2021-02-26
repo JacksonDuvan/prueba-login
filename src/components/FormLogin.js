@@ -8,7 +8,7 @@ export const FormLogin = () => {
     const [error, setError] = useState(false)
     const form = useRef(null)
     const history = useHistory()
-    const { state: { users }, user } = useContext(AppContext)
+    const { state: { users }, logIn } = useContext(AppContext)
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -20,7 +20,7 @@ export const FormLogin = () => {
             setError(true)
             return
         }
-        user(findUser[0])
+        logIn(findUser[0])
         history.push('/')
         
     }
